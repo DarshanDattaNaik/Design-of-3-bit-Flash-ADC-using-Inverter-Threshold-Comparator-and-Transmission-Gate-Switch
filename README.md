@@ -49,7 +49,7 @@ Transmission Gate switch is designed for the following specifications
 
 
 Design Table
-| -------------  | PMOS | NMOS  | 
+|  | PMOS | NMOS  | 
 | ------------- | ------------- | ------------- | 
 | W | 15u | 15u  | 
 | L  | 0.45u | 0.45u| 
