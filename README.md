@@ -41,13 +41,12 @@ Analog to Digital Converter (ADC) converts time continuous physical signal to di
 ## Circuit Details
 ADC has its applications in high-speed communication and signal processing systems. Therefore there is a need of low power, low area and low cost ADC’s. Comparator and encoder are the basic building blocks of Flash ADC.Sampling circuit is very much necessary for the efficient functioning of ADC.The following ADC and Sampling circuit is designed for an operating frequency of 20 KHz and sampling frequency of 800 KHz. A supply voltage of 1V is given to ADC and sample and hold circuit. 
 
+The Sample and Hold circuit is designed using Transmission Gate Switch(TGS) by varying the W and L of PMOS and NMOS and Capacitor value in TGS to get required sampling and operating frequency. 
+
 Seven different voltage values between 0 V and 1 V are used as reference voltage for each comparator. The L and W values of MOS transistors used in the inverter are varied to obtain different threshold voltages for different ITCs. These modified threshold voltages are considered as the comparator reference voltages. 
 
 When input is greater than the reference voltage(threshold voltage) an inverted output (active low) is obtained from the comparator.
-The output of the comparators is fed as input to the priority encoder. The priority encoder is designed to convert the output of seven comparators into 3-bit digital output.The truth table of encoder is given in [Truth Table](#truth-table) section.
-
-The Sample and Hold circuit is designed using Transmission Gate Switch(TGS) by varying the W and L of PMOS and NMOS and Capacitor value in TGS to get required sampling and operating frequency. 
-
+The output of the comparators is fed as input to the priority encoder. The priority encoder is designed to convert the output of seven comparators into 3-bit digital output.The output of encoder is given to latch and the final output is enabled only during the hold period of Sample and Hold circuit.The truth table of encoder is given in [Truth Table](#truth-table) section.
 
 
 ### 1. Transmission Gate Switch
@@ -88,6 +87,38 @@ Design Table
 |  5th   |   602.5      |  3     | 0.15 |    1  | 0.15 |
 |  6th   |   700      |    50   | 0.15 |    1  | 3 |
 |  7th   |  804.23       |  30     | 0.15 |  1    | 60 |
+
+
+## Truth Table
+
+### Priority encoder
+| A7 | A6 | A5  | A4 | A3 | A2 | A1 | Y3 | Y2 | Y1 |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
+| 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 1 |
+| 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 1 | 0 |
+| 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 1 |
+| 1 | 1 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| 1 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 |
+| 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 1 |
+## Software Used
+### eSim
+It is an Open Source EDA developed by FOSSEE, IIT Bombay. It is used for electronic circuit simulation. It is made by the combination of two software namely NgSpice and KiCAD.
+</br>
+For more details refer:
+</br>
+https://esim.fossee.in/home
+### NgSpice
+It is an Open Source Software for Spice Simulations. For more details refer:
+</br>
+http://ngspice.sourceforge.net/docs.html
+### Makerchip
+It is an Online Web Browser IDE for Verilog/System-verilog/TL-Verilog Simulation. Refer
+</br> https://www.makerchip.com/
+### Verilator
+It is a tool which converts Verilog code to C++ objects. Refer:
+https://www.veripool.org/verilator/
 
 
 
