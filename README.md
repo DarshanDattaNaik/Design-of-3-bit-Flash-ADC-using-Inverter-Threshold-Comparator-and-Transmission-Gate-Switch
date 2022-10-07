@@ -31,7 +31,7 @@ Analog to Digital Converter (ADC) converts time continuous physical signal to di
 ![image](https://github.com/DarshanDattaNaik/Design-of-3-bit-Flash-ADC-using-Inverter-Threshold-Comparator-and-Transmission-Gate-Switch/blob/main/project_images/block_diagram.jpeg)
 **Inverter Threshold Comparator**
 ![image](https://github.com/DarshanDattaNaik/Design-of-3-bit-Flash-ADC-using-Inverter-Threshold-Comparator-and-Transmission-Gate-Switch/blob/main/project_images/ITC.jpeg)
-**Transmission Gate Switch**
+**Inverter Threshold Comparator and Transmission Gate Switch**
 ![image]()
 
 
