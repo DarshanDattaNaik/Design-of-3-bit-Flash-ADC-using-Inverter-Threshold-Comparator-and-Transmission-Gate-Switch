@@ -1,6 +1,6 @@
 # Design-of-3-bit-Flash-ADC-using-Inverter-Threshold-Comparator-and-Transmission-Gate-Switch
 This repository is created as a design submission for Mixed Signal SoC design Marathon using eSim & SKY130 
- [Abstract](#abstract)
+- [Abstract](#abstract)
 - [Reference Circuit Diagram](#reference-circuit-diagram)
 - [Reference Waveform](#reference-waveform)
 - [Circuit Details](#circuit-details)
