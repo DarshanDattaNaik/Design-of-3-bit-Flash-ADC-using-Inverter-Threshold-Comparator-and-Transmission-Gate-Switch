@@ -42,7 +42,7 @@ Analog to Digital Converter (ADC) converts time continuous physical signal to di
 ADC has its applications in high-speed communication and signal processing systems. Therefore there is a need of low power, low area and low cost ADC’s. Comparator and encoder are the basic building blocks of Flash ADC.Sampling circuit is very much necessary for the efficient functioning of ADC. 
 
 
-### Transmission Gate Switch
+### 1. Transmission Gate Switch
 Transmission Gate switch is designed for the following specifications
 - Input frequency <= 20 KHz
 - Vdd = 1V
