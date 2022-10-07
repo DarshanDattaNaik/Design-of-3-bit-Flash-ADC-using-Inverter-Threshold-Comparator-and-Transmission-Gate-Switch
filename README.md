@@ -45,6 +45,7 @@ ADC has its applications in high-speed communication and signal processing syste
 ### 1. Transmission Gate Switch
 Transmission Gate switch is designed for the following specifications
 - Input frequency <= 20 KHz
+- Input Voltage range = 0 to 1V
 - Vdd = 1V
 - Sampling frequency = 800 KHz
 
@@ -60,6 +61,14 @@ Design Table
 | W | 15u | 15u  | 100 |
 | L  | 0.45u | 0.45u| 25 |
 | MF |---|---| 1 |
+
+
+### 2. Inverter Threshold Comparators
+Seven Inverter Threshold Comparators are designed for following specifications
+- Vdd = 1V
+- Reference Voltages(Threshold Voltages) : |0.2|0.3|0.4|0.5|0.6|0.7|0.8|
+
+
 
 
 
