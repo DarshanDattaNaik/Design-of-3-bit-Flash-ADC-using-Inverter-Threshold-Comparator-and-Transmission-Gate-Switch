@@ -41,17 +41,17 @@ Analog to Digital Converter (ADC) converts time continuous physical signal to di
 ## Circuit Details
 ADC has its applications in high-speed communication and signal processing systems. Therefore there is a need of low power, low area and low cost ADC’s. Comparator and encoder are the basic building blocks of Flash ADC.Sampling circuit is very much necessary for the efficient functioning of ADC. 
 
-</br>
-Transmission Gate switch is designed for the following specifications
- - Input frequency <= 20 KHz
- - Vdd = 1V
- - Sampling frequency = 800 KHz
-Components
- - sky130_fd_pr_pfet_01v8_lvt
- - sky130_fd_pr_nfet_01v8_lvt
- - sky130_fd_pr_cap_mim_m3_1 
 
-</br>
+Transmission Gate switch is designed for the following specifications
+- Input frequency <= 20 KHz
+- Vdd = 1V
+- Sampling frequency = 800 KHz
+Components
+- sky130_fd_pr_pfet_01v8_lvt
+- sky130_fd_pr_nfet_01v8_lvt
+- sky130_fd_pr_cap_mim_m3_1 
+
+
 
 
 
