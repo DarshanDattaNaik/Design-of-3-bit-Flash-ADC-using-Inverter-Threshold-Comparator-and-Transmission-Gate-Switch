@@ -39,7 +39,15 @@ Analog to Digital Converter (ADC) converts time continuous physical signal to di
 ![image](https://github.com/DarshanDattaNaik/Design-of-3-bit-Flash-ADC-using-Inverter-Threshold-Comparator-and-Transmission-Gate-Switch/blob/main/project_images/Waveform.jpeg)
 
 ## Circuit Details
-ADC has its applications in high-speed communication and signal processing systems. Therefore there is a need of low power, low area and low cost ADC’s. Comparator and encoder are the basic building blocks of Flash ADC.Sampling circuit is very much necessary for the efficient functioning of ADC. 
+ADC has its applications in high-speed communication and signal processing systems. Therefore there is a need of low power, low area and low cost ADC’s. Comparator and encoder are the basic building blocks of Flash ADC.Sampling circuit is very much necessary for the efficient functioning of ADC.The following ADC and Sampling circuit is designed for an operating frequency of 20 KHz and sampling frequency of 800 KHz. A supply voltage of 1V is given to ADC and sample and hold circuit. 
+
+Seven different voltage values between 0 V and 1 V are used as reference voltage for each comparator. The L and W values of MOS transistors used in the inverter are varied to obtain different threshold voltages for different ITCs. These modified threshold voltages are considered as the comparator reference voltages. 
+
+When input is greater than the reference voltage(threshold voltage) an inverted output (active low) is obtained from the comparator.
+The output of the comparators is fed as input to the priority encoder. The priority encoder is designed to convert the output of seven comparators into 3-bit digital output.The truth table of encoder is given in [Truth Table](#truth-table) section.
+
+The Sample and Hold circuit is designed using Transmission Gate Switch(TGS) by varying the W and L of PMOS and NMOS and Capacitor value in TGS to get required sampling frequency. 
+
 
 
 ### 1. Transmission Gate Switch
