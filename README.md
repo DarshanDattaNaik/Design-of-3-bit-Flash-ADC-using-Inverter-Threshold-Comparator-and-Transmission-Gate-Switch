@@ -46,10 +46,14 @@ Transmission Gate switch is designed for the following specifications
 - Input frequency <= 20 KHz
 - Vdd = 1V
 - Sampling frequency = 800 KHz
-Components
-- sky130_fd_pr_pfet_01v8_lvt
-- sky130_fd_pr_nfet_01v8_lvt
-- sky130_fd_pr_cap_mim_m3_1 
+
+
+Design Table
+| -------------  | PMOS | NMOS  | 
+| ------------- | ------------- | ------------- | 
+| W | 15u | 15u  | 
+| L  | 0.45u | 0.45u| 
+
 
 
 
