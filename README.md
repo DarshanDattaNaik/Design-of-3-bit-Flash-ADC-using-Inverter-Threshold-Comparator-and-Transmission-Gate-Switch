@@ -46,7 +46,7 @@ Seven different voltage values between 0 V and 1 V are used as reference voltage
 When input is greater than the reference voltage(threshold voltage) an inverted output (active low) is obtained from the comparator.
 The output of the comparators is fed as input to the priority encoder. The priority encoder is designed to convert the output of seven comparators into 3-bit digital output.The truth table of encoder is given in [Truth Table](#truth-table) section.
 
-The Sample and Hold circuit is designed using Transmission Gate Switch(TGS) by varying the W and L of PMOS and NMOS and Capacitor value in TGS to get required sampling frequency. 
+The Sample and Hold circuit is designed using Transmission Gate Switch(TGS) by varying the W and L of PMOS and NMOS and Capacitor value in TGS to get required sampling and operating frequency. 
 
 
 
