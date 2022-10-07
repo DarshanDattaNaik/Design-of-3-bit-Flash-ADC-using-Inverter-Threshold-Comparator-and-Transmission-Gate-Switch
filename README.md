@@ -36,6 +36,7 @@ Analog to Digital Converter (ADC) converts time continuous physical signal to di
 
 ## Reference Waveform
 
-![image]()
+![image](https://github.com/DarshanDattaNaik/Design-of-3-bit-Flash-ADC-using-Inverter-Threshold-Comparator-and-Transmission-Gate-Switch/blob/main/project_images/Waveform.jpeg)
+
 
 
