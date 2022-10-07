@@ -43,23 +43,23 @@ ADC has its applications in high-speed communication and signal processing syste
 
 
 ### 1. Transmission Gate Switch
-   Transmission Gate switch is designed for the following specifications
-     - Input frequency <= 20 KHz
-     - Vdd = 1V
-     - Sampling frequency = 800 KHz
+Transmission Gate switch is designed for the following specifications
+- Input frequency <= 20 KHz
+- Vdd = 1V
+- Sampling frequency = 800 KHz
 
 
-   Components Used:
-     - sky130_fd_pr__nfet_01v8_lvt
-     - sky130_fd_pr__pfet_01v8_lvt
-     - sky130_fd_pr__cap_mim_m3_1
+Components Used:
+- sky130_fd_pr__nfet_01v8_lvt
+- sky130_fd_pr__pfet_01v8_lvt
+- sky130_fd_pr__cap_mim_m3_1
 
-   Design Table
-     |  | PMOS | NMOS  | Capacitor = 5.0412 pF |
-     | ------------- | ------------- | ------------- | ------------- |
-     | W | 15u | 15u  | 100 |
-     | L  | 0.45u | 0.45u| 25 |
-     | MF |---|---| 1 |
+Design Table
+|  | PMOS | NMOS  | Capacitor = 5.0412 pF |
+| ------------- | ------------- | ------------- | ------------- |
+| W | 15u | 15u  | 100 |
+| L  | 0.45u | 0.45u| 25 |
+| MF |---|---| 1 |
 
 
 
