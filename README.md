@@ -63,10 +63,18 @@ Design Table
 | MF |---|---| 1 |
 
 
-### 2. Inverter Threshold Comparators
-Seven Inverter Threshold Comparators are designed for following specifications
+### 2. Inverter Threshold Comparators (ITC)
+Seven Inverter Threshold Comparators are designed for following specifications 
 - Vdd = 1V
-- Reference Voltages(Threshold Voltages) : |0.2|0.3|0.4|0.5|0.6|0.7|0.8|
+- Reference Voltages(Threshold Voltages) : 0.2V , 0.3V , 0.4V , 0.5V , 0.6V , 0.7V , 0.8V
+
+
+Design Table
+| ITC | Vth(mV) | NMOS  |  | PMOS |  |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| | | | |
+|  |  | | |
+| |||  |
 
 
 
