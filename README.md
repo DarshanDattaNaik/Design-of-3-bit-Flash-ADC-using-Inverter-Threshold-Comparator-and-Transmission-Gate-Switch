@@ -301,11 +301,11 @@ Note: 'V' is used to denote output instead of 'A'
 ## Steps to run this project
 1. Open a new terminal
 2. Clone this project using the following command:</br>
-```git clone https://github.com/Eyantra698Sumanto/XOR-XNOR-Gate.git ```</br>
+```git clone https://github.com/DarshanDattaNaik/Design-of-3-bit-Flash-ADC-using-Inverter-Threshold-Comparator-and-Transmission-Gate-Switch.git ```</br>
 3. Change directory:</br>
-```cd eSim_project_files/xor_xnor```</br>
+```cd eSim_project_files```</br>
 4. Run ngspice:</br>
-```ngspice xor_xnor.cir.out```</br>
+```ngspice ```</br>
 5. To run the project in eSim:
 
   - Run eSim</br>
