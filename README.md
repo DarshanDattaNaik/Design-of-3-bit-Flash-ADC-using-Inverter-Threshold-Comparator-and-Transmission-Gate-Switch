@@ -131,6 +131,7 @@ It is a tool which converts Verilog code to C++ objects. Refer:
 https://www.veripool.org/verilator/
 
 ## Circuit Diagram in eSim
+![image](https://github.com/DarshanDattaNaik/Design-of-3-bit-Flash-ADC-using-Inverter-Threshold-Comparator-and-Transmission-Gate-Switch/blob/main/project_images/esim_implemented_circuit.png)
 
 
 
