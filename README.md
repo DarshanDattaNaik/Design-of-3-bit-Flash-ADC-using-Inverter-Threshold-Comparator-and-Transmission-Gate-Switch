@@ -91,7 +91,7 @@ Design Table
 
 ## Truth Table
 
-### Priority encoder
+### Priority encoder with Latch
 | A7 | A6 | A5  | A4 | A3 | A2 | A1 | Y3 | Y2 | Y1 |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
@@ -102,6 +102,12 @@ Design Table
 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 |
 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 |
 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 1 |
+
+### Latch
+| en | D3 | D2 | D1 |
+| ------------- | ------------- | ------------- | ------------- |
+| 0 | D3  | D2 | D1|
+| 1 | Y3 | Y2 | Y1 |
 ## Software Used
 ### eSim
 It is an Open Source EDA developed by FOSSEE, IIT Bombay. It is used for electronic circuit simulation. It is made by the combination of two software namely NgSpice and KiCAD.
@@ -119,6 +125,8 @@ It is an Online Web Browser IDE for Verilog/System-verilog/TL-Verilog Simulation
 ### Verilator
 It is a tool which converts Verilog code to C++ objects. Refer:
 https://www.veripool.org/verilator/
+
+## Circuit Diagram in eSim
 
 
 
