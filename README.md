@@ -48,6 +48,8 @@ The sampled input is given to Seven Comparators with desired reference voltages.
 When input is greater than the reference voltage(threshold voltage) an inverted output (active low) is obtained from the comparator.
 The output of the comparators is fed as input to the priority encoder. The priority encoder is designed to convert the output of seven comparators into 3-bit digital output.The output of encoder is given to latch and the final output is enabled only during the hold period of Sample and Hold circuit.The truth table of encoder is given in [Truth Table](#truth-table) section.
 
+** NOTE : In the literature survey report reference waveforms are mentioned for Ramp Wave input just to show the behaviour of ADC but in implementation  Sine waveform is used to make frequency analysis as it is difficult to use ramp wave for frequency analysis. But the required output is obtained **
+
 
 ### 1. Transmission Gate Switch
 Transmission Gate switch is designed for the following specifications
