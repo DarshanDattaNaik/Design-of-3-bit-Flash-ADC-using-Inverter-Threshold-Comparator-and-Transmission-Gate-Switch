@@ -1,0 +1,47 @@
+* C:\Users\darsh\eSim-Workspace\Flash_adc_3bit\Flash_adc_3bit.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 10/7/2022 3:10:35 PM
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+scmode1  SKY130mode		
+SC16  V7 Vsample Net-_SC1-Pad4_ Net-_SC1-Pad4_ sky130_fd_pr__pfet_01v8		
+SC14  V6 Vsample Net-_SC1-Pad4_ Net-_SC1-Pad4_ sky130_fd_pr__pfet_01v8		
+SC13  V6 Vsample GND GND sky130_fd_pr__nfet_01v8		
+SC12  V5 Vsample Net-_SC1-Pad4_ Net-_SC1-Pad4_ sky130_fd_pr__pfet_01v8		
+SC11  V5 Vsample GND GND sky130_fd_pr__nfet_01v8		
+SC10  V4 Vsample Net-_SC1-Pad4_ Net-_SC1-Pad4_ sky130_fd_pr__pfet_01v8		
+SC9  V4 Vsample GND GND sky130_fd_pr__nfet_01v8		
+SC8  V3 Vsample Net-_SC1-Pad4_ Net-_SC1-Pad4_ sky130_fd_pr__pfet_01v8		
+SC7  V3 Vsample GND GND sky130_fd_pr__nfet_01v8		
+SC4  V1 Vsample Net-_SC1-Pad4_ Net-_SC1-Pad4_ sky130_fd_pr__pfet_01v8		
+SC3  V1 Vsample GND GND sky130_fd_pr__nfet_01v8		
+SC6  V2 Vsample Net-_SC1-Pad4_ Net-_SC1-Pad4_ sky130_fd_pr__pfet_01v8		
+SC5  V2 Vsample GND GND sky130_fd_pr__nfet_01v8		
+v1  Net-_SC1-Pad4_ GND DC		
+SC15  V7 Vsample GND GND sky130_fd_pr__nfet_01v8		
+U9  V7 V6 V5 V4 V3 V2 V1 Net-_U10-Pad1_ Net-_U10-Pad2_ Net-_U10-Pad3_ Net-_U10-Pad4_ Net-_U10-Pad5_ Net-_U10-Pad6_ Net-_U10-Pad7_ adc_bridge_7		
+U10  Net-_U10-Pad1_ Net-_U10-Pad2_ Net-_U10-Pad3_ Net-_U10-Pad4_ Net-_U10-Pad5_ Net-_U10-Pad6_ Net-_U10-Pad7_ Net-_U10-Pad8_ D3 D2 D1 darshan_naik_priority_encoder		
+U14  Net-_SC1-Pad2_ Net-_U10-Pad8_ adc_bridge_1		
+U11  D3 plot_v1		
+U13  D2 plot_v1		
+U12  D1 plot_v1		
+SC1  Vin Net-_SC1-Pad2_ Vsample Net-_SC1-Pad4_ sky130_fd_pr__pfet_01v8_lvt		
+SC2  Vin Net-_SC2-Pad2_ Vsample GND sky130_fd_pr__nfet_01v8_lvt		
+SC17  Vsample GND sky130_fd_pr__cap_mim_m3_1		
+U15  Vsample plot_v1		
+v2  Vin GND sine		
+v5  Net-_SC2-Pad2_ GND pulse		
+v4  Net-_SC1-Pad2_ GND pulse		
+U8  Vin plot_v1		
+U1  V7 plot_v1		
+U2  V6 plot_v1		
+U3  V5 plot_v1		
+U4  V4 plot_v1		
+U5  V3 plot_v1		
+U6  V2 plot_v1		
+U7  V1 plot_v1		
+
+.end
