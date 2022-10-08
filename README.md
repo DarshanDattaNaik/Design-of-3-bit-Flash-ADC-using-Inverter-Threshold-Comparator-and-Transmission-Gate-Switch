@@ -288,7 +288,7 @@ Note: 'V' is used to denote output instead of 'A'
 ![image](https://github.com/DarshanDattaNaik/Design-of-3-bit-Flash-ADC-using-Inverter-Threshold-Comparator-and-Transmission-Gate-Switch/blob/main/project_images/Comparator%20outputs.png)
 
 ### Output Waveforms
-![image]()
+![image](https://github.com/DarshanDattaNaik/Design-of-3-bit-Flash-ADC-using-Inverter-Threshold-Comparator-and-Transmission-Gate-Switch/blob/main/project_images/output%20waveform.png)
 
  
 
