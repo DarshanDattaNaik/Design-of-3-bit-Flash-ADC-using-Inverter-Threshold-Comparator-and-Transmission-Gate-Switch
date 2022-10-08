@@ -279,14 +279,14 @@ plot v(v7) v(v6) v(v5) v(v4) v(v3) v(v2) v(v1)
 ## NgSpice Plots
 ### Input and Sampled Waveform for Sine wave of 20 Khz
 
-![image](https://user-images.githubusercontent.com/58599984/156440036-188911e0-9bb2-4d9f-b53d-878f5792d1c6.png)
+![image](https://github.com/DarshanDattaNaik/Design-of-3-bit-Flash-ADC-using-Inverter-Threshold-Comparator-and-Transmission-Gate-Switch/blob/main/project_images/Input%20and%20sampled%20waveform.png)
 
 ### Comparator waveforms for Sine wave of 20 Khz
 
-![image](https://user-images.githubusercontent.com/58599984/156440082-c3f319ef-3224-4595-85e9-38bae135350f.png)
+![image]()
 
 ### Output Waveforms
-![image](https://user-images.githubusercontent.com/58599984/156439624-353c14ac-4216-4aa7-8207-64f4c287b2b7.png)
+![image]()
 ![image](https://user-images.githubusercontent.com/58599984/156439590-9371c62f-384b-42f8-9403-9704429d752d.png)
  
 
