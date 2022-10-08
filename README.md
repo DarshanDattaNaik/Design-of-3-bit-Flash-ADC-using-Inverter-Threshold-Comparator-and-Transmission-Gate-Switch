@@ -156,6 +156,53 @@ https://www.veripool.org/verilator/
     endmodule
 
 
+## Makerchip
+      \TLV_version 1d: tl-x.org
+      \SV
+      /* verilator lint_off UNUSED*/  /* verilator lint_off DECLFILENAME*/  /* verilator lint_off BLKSEQ*/  /* verilator lint_off WIDTH*/  /* verilator lint_off SELRANGE*/  /* verilator lint_off PINCONNECTEMPTY*/  /* verilator lint_off DEFPARAM*/  /* verilator lint_off IMPLICIT*/  /* verilator lint_off COMBDLY*/  /* verilator lint_off SYNCASYNCNET*/  /* verilator lint_off UNOPTFLAT */  /* verilator lint_off UNSIGNED*/  /* verilator lint_off CASEINCOMPLETE*/  /* verilator lint_off UNDRIVEN*/  /* verilator lint_off VARHIDDEN*/  /* verilator lint_off CASEX*/  /* verilator lint_off CASEOVERLAP*/  /* verilator lint_off PINMISSING*/  /* verilator lint_off LATCH*/  /* verilator lint_off BLKANDNBLK*/  /* verilator lint_off MULTIDRIVEN*/  /* verilator lint_off NULLPORT*/  /* verilator lint_off EOFNEWLINE*/  /* verilator lint_off WIDTHCONCAT*/  /* verilator lint_off ASSIGNDLY*/  /* verilator lint_off MODDUP*/  /* verilator lint_off STMTDLY*/  /* verilator lint_off LITENDIAN*/  /* verilator lint_off INITIALDLY*/  /* verilator lint_off */  
+
+      //Your Verilog/System Verilog Code Starts Here:
+      module darshan_naik_priority_encoder(A,D,en);
+      input [7:1] A;
+      input en;
+      output reg [3:1] D;
+      reg [3:1] Y;
+      always@(A)
+      begin
+      if(~A[7]) Y=3'd7;
+      else if (~A[6]) Y=3'd6;
+      else if (~A[5]) Y=3'd5;
+      else if (~A[4]) Y=3'd4;
+      else if (~A[3]) Y=3'd3;
+      else if (~A[2]) Y=3'd2;
+      else if (~A[1]) Y=3'd1;
+      else Y=3'd0;
+      end
+      always@(*)
+      if(en) D<=Y;
+      else D<=D;
+      endmodule
+
+
+
+     //Top Module Code Starts here:
+	module top(input logic clk, input logic reset, input logic [31:0] cyc_cnt, output logic passed, output logic failed);
+		logic  [7:1] A;//input
+		logic  en;//input
+		logic  [3:1] D;//output
+     //The $random() can be replaced if user wants to assign values
+		assign A = $random();
+		assign en = $random();
+		darshan_naik_priority_encoder darshan_naik_priority_encoder(.A(A), .en(en), .D(D));
+	
+    \TLV
+    //Add \TLV here if desired                                     
+    \SV
+    endmodule
+ 
+
+
+
 
 
 
