@@ -284,12 +284,12 @@ plot v(v7) v(v6) v(v5) v(v4) v(v3) v(v2) v(v1)
 ![image](https://github.com/DarshanDattaNaik/Design-of-3-bit-Flash-ADC-using-Inverter-Threshold-Comparator-and-Transmission-Gate-Switch/blob/main/project_images/Input%20and%20sampled%20waveform.png)
 
 ### Comparator waveforms for Sine wave of 20 Khz
-
-![image]()
+Note: 'V' is used to denote output instead of 'A'
+![image](https://github.com/DarshanDattaNaik/Design-of-3-bit-Flash-ADC-using-Inverter-Threshold-Comparator-and-Transmission-Gate-Switch/blob/main/project_images/Comparator%20outputs.png)
 
 ### Output Waveforms
 ![image]()
-![image](https://user-images.githubusercontent.com/58599984/156439590-9371c62f-384b-42f8-9403-9704429d752d.png)
+
  
 
 
