@@ -203,7 +203,9 @@ endmodule
 endmodule
 ```
     
-## Makerchip Plots
+## Makerchip Outputs
+
+![image](https://github.com/DarshanDattaNaik/Design-of-3-bit-Flash-ADC-using-Inverter-Threshold-Comparator-and-Transmission-Gate-Switch/blob/main/project_images/makerchip_outputs.png)
 
 
 ## Netlists
