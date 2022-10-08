@@ -199,6 +199,87 @@ https://www.veripool.org/verilator/
     //Add \TLV here if desired                                     
     \SV
     endmodule
+    
+## Makerchip Plots
+![image](https://user-images.githubusercontent.com/58599984/156443516-6fdc4420-0bab-40a8-84f4-515966e4f569.png)
+
+## Netlists
+        * c:\users\darsh\esim-workspace\flash_adc_3bit\flash_adc_3bit.cir
+
+        .include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pw2nd_11v0.model.spice"
+        .include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__diode_pd2nw_11v0.model.spice"
+        .include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__pnp.model.spice"
+        .include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__linear.model.spice"
+        .lib "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130.lib.spice" tt
+        .include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__inductors.model.spice"
+        .include "C:\FOSSEE\eSim\library\sky130_fd_pr\models\sky130_fd_pr__model__r+c.model.spice"
+        * s c m o d e
+        xsc16 v7 vsample net-_sc1-pad4_ net-_sc1-pad4_ sky130_fd_pr__pfet_01v8 w=30 l=0.15
+	xsc14 v6 vsample net-_sc1-pad4_ net-_sc1-pad4_ sky130_fd_pr__pfet_01v8 w=50 l=0.15
+	xsc13 v6 vsample gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=3
+	xsc12 v5 vsample net-_sc1-pad4_ net-_sc1-pad4_ sky130_fd_pr__pfet_01v8 w=3 l=0.15
+	xsc11 v5 vsample gnd gnd sky130_fd_pr__nfet_01v8 w=1 l=0.15
+	xsc10 v4 vsample net-_sc1-pad4_ net-_sc1-pad4_ sky130_fd_pr__pfet_01v8 w=1 l=0.15
+	xsc9 v4 vsample gnd gnd sky130_fd_pr__nfet_01v8 w=9 l=0.3
+	xsc8 v3 vsample net-_sc1-pad4_ net-_sc1-pad4_ sky130_fd_pr__pfet_01v8 w=1 l=0.3
+	xsc7 v3 vsample gnd gnd sky130_fd_pr__nfet_01v8 w=5 l=0.3
+	xsc4 v1 vsample net-_sc1-pad4_ net-_sc1-pad4_ sky130_fd_pr__pfet_01v8 w=1 l=16.5
+	xsc3 v1 vsample gnd gnd sky130_fd_pr__nfet_01v8 w=50 l=0.45
+	xsc6 v2 vsample net-_sc1-pad4_ net-_sc1-pad4_ sky130_fd_pr__pfet_01v8 w=1 l=3
+	xsc5 v2 vsample gnd gnd sky130_fd_pr__nfet_01v8 w=4 l=0.45
+	v1 net-_sc1-pad4_ gnd  dc 1
+	xsc15 v7 vsample gnd gnd sky130_fd_pr__nfet_01v8 w=1  l=60
+	* u9  v7 v6 v5 v4 v3 v2 v1 net-_u10-pad1_ net-_u10-pad2_ net-_u10-pad3_ net-_u10-pad4_ net-_u10-pad5_ net-_u10-pad6_ net-_u10-pad7_ adc_bridge_7
+	* u10  net-_u10-pad1_ net-_u10-pad2_ net-_u10-pad3_ net-_u10-pad4_ net-_u10-pad5_ net-_u10-pad6_ net-_u10-pad7_ net-_u10-pad8_ d3 d2 d1    darshan_naik_priority_encoder
+	* u14  net-_sc1-pad2_ net-_u10-pad8_ adc_bridge_1
+	* u11  d3 plot_v1
+	* u13  d2 plot_v1
+	* u12  d1 plot_v1
+	xsc1 vin net-_sc1-pad2_ vsample net-_sc1-pad4_ sky130_fd_pr__pfet_01v8_lvt w=15 l=0.45
+	xsc2 vin net-_sc2-pad2_ vsample gnd sky130_fd_pr__nfet_01v8_lvt w=15 l=0.45
+	xsc17 vsample gnd sky130_fd_pr__cap_mim_m3_1 W=100  L=25  MF=1
+	* u15  vsample plot_v1
+	v2  vin gnd sine(0.5 0.5 20000 0 0)
+	v5  net-_sc2-pad2_ gnd pulse(0 1 0 1p 1p 0.625u 1.25u)
+	v4  net-_sc1-pad2_ gnd pulse(1 0 0 1p 1p 0.625u 1.25u)
+	* u8  vin plot_v1
+	* u1  v7 plot_v1
+	* u2  v6 plot_v1
+	* u3  v5 plot_v1
+	* u4  v4 plot_v1
+	* u5  v3 plot_v1
+	* u6  v2 plot_v1
+	* u7  v1 plot_v1
+	a1 [v7 v6 v5 v4 v3 v2 v1 ] [net-_u10-pad1_ net-_u10-pad2_ net-_u10-pad3_ net-_u10-pad4_ net-_u10-pad5_ net-_u10-pad6_ net-_u10-pad7_ ] u9
+	a2 [net-_u10-pad1_ net-_u10-pad2_ net-_u10-pad3_ net-_u10-pad4_ net-_u10-pad5_ net-_u10-pad6_ net-_u10-pad7_ ] [net-_u10-pad8_ ] [d3 d2 d1 ] u10
+	a3 [net-_sc1-pad2_ ] [net-_u10-pad8_ ] u14
+	* Schematic Name:                             adc_bridge_7, NgSpice Name: adc_bridge
+	.model u9 adc_bridge(in_low=0.015 in_high=0.015 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+	* Schematic Name:                             darshan_naik_priority_encoder, NgSpice Name: darshan_naik_priority_encoder
+	.model u10 darshan_naik_priority_encoder(rise_delay=1.0e-9 fall_delay=1.0e-9 input_load=1.0e-12 instance_id=1 ) 
+	* Schematic Name:                             adc_bridge_1, NgSpice Name: adc_bridge
+	.model u14 adc_bridge(in_low=0.015 in_high=0.015 rise_delay=1.0e-9 fall_delay=1.0e-9 ) 
+	.tran 1e-09 0.05e-03 0e-00
+
+	* Control Statements 
+	.control
+	run
+	print allv > plot_data_v.txt
+	print alli > plot_data_i.txt
+	plot v(d3) 
+	plot v(d2) 
+	plot v(d1)
+	plot v(vsample) v(vin)
+	plot v(v7) v(v6) v(v5) v(v4) v(v3) v(v2) v(v1)
+	.endc
+	.end
+
+## NgSpice Plots
+![image](https://user-images.githubusercontent.com/58599984/156440036-188911e0-9bb2-4d9f-b53d-878f5792d1c6.png)
+![image](https://user-images.githubusercontent.com/58599984/156440082-c3f319ef-3224-4595-85e9-38bae135350f.png)
+
+![image](https://user-images.githubusercontent.com/58599984/156439624-353c14ac-4216-4aa7-8207-64f4c287b2b7.png)
+![image](https://user-images.githubusercontent.com/58599984/156439590-9371c62f-384b-42f8-9403-9704429d752d.png)
  
 
 
