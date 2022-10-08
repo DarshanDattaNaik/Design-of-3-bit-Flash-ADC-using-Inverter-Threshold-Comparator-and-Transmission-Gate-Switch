@@ -305,7 +305,7 @@ Note: 'V' is used to denote output instead of 'A'
 3. Change directory:</br>
 ```cd eSim_project_files```</br>
 4. Run ngspice:</br>
-```ngspice ```</br>
+```ngspice Flash_adc_3bit.cir.out```</br>
 5. To run the project in eSim:
 
   - Run eSim</br>
