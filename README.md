@@ -43,7 +43,7 @@ ADC has its applications in high-speed communication and signal processing syste
 
 The Sample and Hold circuit is designed using Transmission Gate Switch(TGS) by varying the W and L of PMOS and NMOS and Capacitor value in TGS to get required sampling and operating frequency. 
 
-Seven different voltage values between 0 V and 1 V are used as reference voltage for each comparator. The L and W values of MOS transistors used in the inverter are varied to obtain different threshold voltages for different ITCs. These modified threshold voltages are considered as the comparator reference voltages. 
+The sampled input is given to Seven Comparators with desired reference voltages. Seven different voltage values between 0 V and 1 V are used as reference voltage for each comparator. The L and W values of MOS transistors used in the inverter are varied to obtain different threshold voltages for different ITCs. These modified threshold voltages are considered as the comparator reference voltages. 
 
 When input is greater than the reference voltage(threshold voltage) an inverted output (active low) is obtained from the comparator.
 The output of the comparators is fed as input to the priority encoder. The priority encoder is designed to convert the output of seven comparators into 3-bit digital output.The output of encoder is given to latch and the final output is enabled only during the hold period of Sample and Hold circuit.The truth table of encoder is given in [Truth Table](#truth-table) section.
@@ -74,6 +74,10 @@ Design Table
 Seven Inverter Threshold Comparators are designed for following specifications 
 - Vdd = 1V
 - Reference Voltages(Threshold Voltages) : 0.2V , 0.3V , 0.4V , 0.5V , 0.6V , 0.7V , 0.8V
+
+Components Used:
+- sky130_fd_pr__nfet_01v8
+- sky130_fd_pr__pfet_01v8
 
 
 Design Table
