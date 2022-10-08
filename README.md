@@ -157,7 +157,7 @@ https://www.veripool.org/verilator/
     endmodule
 
 
-## Makerchip
+## Makerchip Code
 ```
 \TLV_version 1d: tl-x.org
 \SV
@@ -203,7 +203,7 @@ endmodule
 endmodule
 ```
     
-## Makerchip Outputs
+## Makerchip Outputs for Encoder
 
 ![image](https://github.com/DarshanDattaNaik/Design-of-3-bit-Flash-ADC-using-Inverter-Threshold-Comparator-and-Transmission-Gate-Switch/blob/main/project_images/makerchip_outputs.png)
 
