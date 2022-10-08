@@ -133,6 +133,28 @@ https://www.veripool.org/verilator/
 ## Circuit Diagram in eSim
 ![image](https://github.com/DarshanDattaNaik/Design-of-3-bit-Flash-ADC-using-Inverter-Threshold-Comparator-and-Transmission-Gate-Switch/blob/main/project_images/esim_implemented_circuit.png)
 
+## Verilog Code
+    module darshan_naik_priority_encoder(A,D,en);
+    input [7:1] A;
+    input en;
+    output reg [3:1] D;
+    reg [3:1] Y;
+    always@(A)
+    begin
+    if(~A[7]) Y=3'd7;
+    else if (~A[6]) Y=3'd6;
+    else if (~A[5]) Y=3'd5;
+    else if (~A[4]) Y=3'd4;
+    else if (~A[3]) Y=3'd3;
+    else if (~A[2]) Y=3'd2;
+    else if (~A[1]) Y=3'd1;
+    else Y=3'd0;
+    end
+    always@(*)
+    if(en) D<=Y;
+    else D<=D;
+    endmodule
+
 
 
 
