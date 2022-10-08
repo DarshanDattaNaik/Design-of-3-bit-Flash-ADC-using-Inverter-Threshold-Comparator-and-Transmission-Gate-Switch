@@ -312,15 +312,19 @@ Note: 'V' is used to denote output instead of 'A'
   - Load the project</br>
   - Open eeSchema</br>
 ## Acknowlegdements
-1. FOSSEE, IIT Bombay
-2. Steve Hoover, Founder, Redwood EDA
-3. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. - kunalpghosh@gmail.com
-4. Sumanto Kar, eSim Team, FOSSEE
+1. FOSSEE (https://fossee.in/)
+2. IIT Bombay (http://iitb.ac.in/)
+3. Google (https://www.google.co.in/)
+4. Spoken Tutorials (https://spoken-tutorial.org/)
+5. Chips to Startup (https://www.c2s.gov.in/)
+6. VLSI System Design (https://www.vlsisystemdesign.com/)
+7. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. - kunalpghosh@gmail.com
+8. Sumanto Kar, eSim Team, FOSSEE
+
 
 ## References
-1. Ahmad, Nabihah & Hasan, Rezaul. (2011). A new design of XOR-XNOR gates for low power application. 10.1109/ICEDSA.2011.5959039. 
-2. K. Ravali, N. R. Vijay, S. Jaggavarapu and R. Sakthivel, "Low power XOR gate design and its applications," 2017 Fourth International Conference on Signal Processing, Communication and Networking (ICSCN), 2017, pp. 1-4, doi: 10.1109/ICSCN.2017.8085699.
-3. https://github.com/Eyantra698Sumanto/Two-in-One-Low-power-XOR-XNOR-Gate.git
+1. Harisha, Satheesh Rao,” Design of 3-bit Flash ADC using Inverter Threshold Comparator in 45 nm CMOS Technology”,2017 International Conference on Intelligent        Computing, Instrumentation and Control Technologies (ICICICT)   
+2. Meng-Tong Tan, Joseph S. Chang and Yit-Chow Tong,” A Process-Independent Threshold Voltage Inverter-Comparator for Pulse Width Modulation Applications”
  
 
 
